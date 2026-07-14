@@ -1,4 +1,4 @@
-name: "DevSecOps Pipeline (SAST & SCA)"
+name: "DevSecOps Pipeline (SAST & SCA) v1"
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
         with:
           config: "p/default"
           # 인터뷰 핵심: 초기 도입 시에는 오탐으로 인한 빌드 실패를 막기 위해 에러 발생 시에도 계속 진행
-          auditOn: "never" 
+          
 
       - name: 3. Trivy 오픈소스 라이브러리 분석 (SCA)
         uses: aquasecurity/trivy-action@master
