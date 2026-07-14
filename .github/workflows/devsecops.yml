@@ -1,4 +1,4 @@
-name: "DevSecOps Pipeline (SAST & SCA)"
+name: "DevSecOps Pipeline (SAST & SCA) v1"
 
 on:
   push:
